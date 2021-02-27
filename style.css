@@ -1,7 +1,9 @@
-@charset "UTF-8"
-body{
-    background-color: white ;
+@charset "UTF-8";
+
+body {
+    background-color: white;
 }
+
 /* Formatações para o Menu*/
 
 ul {
@@ -38,3 +40,14 @@ li a:hover {
 
 /* Formatação da Vitrine */
 
+.vitrine-slider .slide {
+    transform: scale(0.6);
+    transition: 1s;
+    -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+}
+
+.vitrine-slider .slide.slick-center {
+    transform: scale(1);
+}
