@@ -51,3 +51,11 @@ li a:hover {
 .vitrine-slider .slide.slick-center {
     transform: scale(1);
 }
+
+div#camiseta-name{
+    text-align: center;
+}
+
+div#camiseta-price {
+    text-align: center;
+}
