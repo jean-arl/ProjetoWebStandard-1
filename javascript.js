@@ -13,8 +13,11 @@ $(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        centerMode:true,
-        responsive: [
+        centerMode: true,
+        prevArrow: $("#arrow-prev"),
+        nextArrow: $("#arrow-next"),
+        responsive: 
+        [
             {
               breakpoint: 640,
               settings: {

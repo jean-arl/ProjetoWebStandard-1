@@ -50,8 +50,8 @@ li a:hover {
 }
 
 .vitrine-slider .slide.slick-center {
-    transform: scale(.8);
-    box-shadow: 1px 2px 2px 2px black;
+    transform: scale(0.8);
+    box-shadow: 1px 2px 2px 2px rgb(82, 77, 77);
 }
 
 div#camiseta-name{
@@ -61,4 +61,14 @@ div#camiseta-name{
 
 div#camiseta-price {
     text-align: center;
+}
+
+/* icone da vitrine */
+
+.icone-prev {
+    margin-left: 502px;
+}
+
+.icone-next {
+    margin-left: 796px;
 }
