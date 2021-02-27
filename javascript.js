@@ -1,16 +1,30 @@
 $(function(){
 
+    function atualizar_info (){
+        $("#camiseta-name").text( $(".slick-center").data("name") );
+        var camisetaPrice = parseFloat($(".slick-center").data("price")).toLocaleString("pt-BR", {style:"currency", currency: "BRL", minimumFractionDigits: 2});
+        $("#camiseta-price").text( camisetaPrice );
+    }
+    $(".vitrine-slider").on('init', function(){
+        atualizar_info ();
+    });
+
     $(".vitrine-slider").slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         centerMode:true,
+        responsive: [
+            {
+              breakpoint: 640,
+              settings: {
+                slidesToShow: 1
+                } 
+            }
+        ]
     });
 
     $(".vitrine-slider").on('afterChange', function(){
-        $("#camiseta-name").text($(".slick-center").data("name"));
-        var camisetaPrice = parseFloat($(".slick-center").data("price")).toLocaleStringt("pt-BR", {style:"currency", currency:"BRL", minimumFractionDigits: 2});
-        $("#camiseta-price").text(camisetaPrice);
-
+        atualizar_info ();
     });
 })

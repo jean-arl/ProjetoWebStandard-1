@@ -44,16 +44,19 @@ li a:hover {
     transform: scale(0.6);
     transition: 1s;
     -webkit-transition: background-color 1s ease-out;
-  -moz-transition: background-color 1s ease-out;
-  -o-transition: background-color 1s ease-out;
+    -moz-transition: background-color 1s ease-out;
+    -o-transition: background-color 1s ease-out;
+    outline: none !important;
 }
 
 .vitrine-slider .slide.slick-center {
-    transform: scale(1);
+    transform: scale(.8);
+    box-shadow: 1px 2px 2px 2px black;
 }
 
 div#camiseta-name{
     text-align: center;
+    margin-top: -50px;
 }
 
 div#camiseta-price {
