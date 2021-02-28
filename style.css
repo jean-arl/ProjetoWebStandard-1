@@ -40,7 +40,13 @@ li a:hover {
 
 /* Formatação da Vitrine */
 
+.container-vitrine {
+    background-color: rgb(180, 178, 178);
+    box-shadow: 2px 1px 10px 2px black;
+}
+
 .vitrine-slider .slide {
+    box-shadow: 1px 1px 10px 1px black;
     transform: scale(0.6);
     transition: 1s;
     -webkit-transition: background-color 1s ease-out;
@@ -51,24 +57,40 @@ li a:hover {
 
 .vitrine-slider .slide.slick-center {
     transform: scale(0.8);
-    box-shadow: 1px 2px 2px 2px rgb(82, 77, 77);
+    box-shadow: 1px 1px 10px 1px black;
 }
 
 div#camiseta-name{
     text-align: center;
-    margin-top: -50px;
+    margin-top: -25px;
 }
 
 div#camiseta-price {
     text-align: center;
+    margin-top: 12px;
+    font-size: 25px;
 }
 
 /* icone da vitrine */
 
-.icone-prev {
-    margin-left: 502px;
+.prev {
+    margin-top: -50px;
+    margin-left: 510px;
 }
 
-.icone-next {
-    margin-left: 796px;
+.next {
+    margin-top: 10px;
+    margin-left: 780px;
+}
+
+.description {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+}
+
+#camiseta-price {
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
 }
